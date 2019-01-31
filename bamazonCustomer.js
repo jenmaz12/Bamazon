@@ -45,6 +45,7 @@ function buyProduct() {
                 }
                 else if (res[0].quantity < parseInt(answers.numberUnits)) {
                     console.log("Insufficient quantity!");
+                    displayProducts();
                 } else {
                     updateProduct(res[0], answers);
                 }
